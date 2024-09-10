@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} 
+
+
+.container {
+    width: 1140px;
+    height: 508px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 10px;
+}
+
+.container .news {
+    height: 100%;
+    width: 832px;
+    background-color: blue;
+}
+
+.container .ads {
+    width: 300px;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+.container .news-row {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-color: aqua;
+}
+
+.news-row:nth-child(2) {
+    background-color: cadetblue;
+}
+
+.main-content {
+    height: 100%;
+    width: 485.328px;
+    background-color: tomato;
+    position: relative;
+}
+
+.sub-content {
+    width: 346.656px;
+    height: 100%;
+    background-color: chartreuse;
+}
+
+.category{
+    display: block;
+    height: 30px;
+    width: 120px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 195, 120);
+    position: absolute;
+    top: 10px;
+
+    font-family: "Battambang", system-ui;
+    font-weight: 700;
+    font-style: normal;
+
+    z-index: 1;
+}
+
+.main-image {
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+
+.main-content figure img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.dark-bg {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.5;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0));
+    transition: all 0.2s;
+}
+
+
+.main-content:hover .dark-bg {
+    height: 100%;
+    opacity: 1;
+
+}
+
+.detail {
+    height: 80px;
+    position: absolute;
+    bottom: 35px;
+    color: white;
+    
+    font-family: "Battambang", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0 15px;
+    overflow: hidden;
+
+    transition: all 0.3s;
+}
+
+.detail h3 {
+    font-size: 22px;
+    transition: all 0.3s;
+}
+
+.detail p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.main-content:hover .detail {
+    height: 140px;
+}
+.main-content:hover .detail h3 {
+   color: red;
+}
+
+.time{
+    padding: 0 15px;
+    position: absolute;
+    bottom: 0;
+    color: #FFFFFF;
+}
+
+
+.hot-news {
+    height: 627px;
+    width: 1140px;
+    background-color: aqua;
+    margin: 100px auto 20px;
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    top: -60px;
+    height: 60px;
+    width: 100%;
+    border-bottom: 3px solid red;
+}
+
+.banner-title {
+    width: 120px;
+    height: 100%;
+    background-color: red;
+    clip-path: polygon(0% 0%,
+                   90% 0%,
+                   100% 100%,
+                    1% 200%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    color: white;
+
+    font-family: "Battambang", system-ui;
+    font-weight: 700;
+}
